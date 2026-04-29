@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camera Test – Free Online Webcam & Camera Checker | CameraCheck</title>
+  <meta name="description" content="Test your webcam, phone camera, and any connected camera instantly in your browser. Check resolution, FPS, microphone, flash, and more. Free, secure, no installation required." />
+  <meta name="keywords" content="camera test, webcam test, camera check, test webcam online, webcam tester, camera tester, microphone test, camera resolution test, FPS test, online camera test" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="CameraCheck" />
+  <link rel="canonical" href="https://cameracheck.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Camera Test – Free Online Webcam & Camera Checker" />
+  <meta property="og:description" content="Test your webcam, phone camera, and any connected camera instantly. Check resolution, FPS, microphone and more. 100% free." />
+  <meta property="og:url" content="https://cameracheck.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://cameracheck.github.io/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Camera Test – Free Online Webcam & Camera Checker" />
+  <meta name="twitter:description" content="Instantly test your webcam or phone camera in the browser. Free, private, no install." />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cameracheck.github.io/#website",
+        "url": "https://cameracheck.github.io/",
+        "name": "CameraCheck",
+        "description": "Free online camera and webcam testing tool",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://cameracheck.github.io/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://cameracheck.github.io/#app",
+        "name": "Camera Test by CameraCheck",
+        "url": "https://cameracheck.github.io/",
+        "applicationCategory": "UtilitiesApplication",
+        "browserRequirements": "Requires a modern browser with WebRTC support",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Test your webcam, phone camera and any USB camera online. Check resolution, frame rate, audio, and device info – no download required.",
+        "featureList": [
+          "Live webcam preview",
+          "Resolution detection",
+          "FPS counter",
+          "Microphone test",
+          "Camera flash test",
+          "Multi-camera support",
+          "Screenshot capture",
+          "Device information"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I test my webcam online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click 'Start Camera Test' on our homepage, allow browser camera access, and your live webcam preview will appear instantly with resolution, FPS, and device info."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my camera data stored or shared?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. CameraCheck runs entirely in your browser. No video, audio, or personal data is ever uploaded to any server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I test my phone's front and rear camera?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. On mobile browsers, you can switch between the front and rear camera directly from the camera test tool."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my webcam not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common causes include browser permissions being denied, another app using the camera, or an outdated driver. Our troubleshooting guide walks you through each fix."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header injected by header.js -->
+  <div id="header-root"></div>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="grid-lines"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="scan-line"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-badge">
+          <span class="dot pulse"></span>
+          Free · No Install · 100% Private
+        </div>
+        <h1 class="hero-title">
+          <span class="line-1">Camera Test</span>
+          <span class="line-2">That <em>Actually</em> Works</span>
+        </h1>
+        <p class="hero-desc">Test your webcam, phone camera, or any connected camera right in your browser. Instantly check resolution, frame rate, audio, and more — zero uploads, zero tracking.</p>
+        <div class="hero-cta">
+          <a href="#camera-tester" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M20.188 10.934c.2.4.312.845.312 1.316C20.5 15.47 16.642 18 12 18s-8.5-2.53-8.5-5.75c0-.47.112-.915.312-1.316M12 2l1.5 3h3l-2.5 2.5L15 11l-3-2-3 2 1-3.5L7.5 5h3z"/></svg>
+            Start Camera Test
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost">How it works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>WebRTC</strong><span>Powered</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>0 bytes</strong><span>Uploaded</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>All</strong><span>Cameras</span></div>
+          <div class="stat-div"></div>
+          <div class="stat"><strong>4K</strong><span>Support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAMERA TESTER TOOL ===== -->
+    <section class="tester-section" id="camera-tester">
+      <div class="container">
+        <div class="section-label">Main Tool</div>
+        <h2 class="section-title">Live Camera Tester</h2>
+        <p class="section-sub">Click start, allow access, and watch your camera come to life with full diagnostics.</p>
+
+        <div class="tester-grid">
+          <!-- Video Panel -->
+          <div class="tester-panel video-panel">
+            <div class="video-wrapper" id="videoWrapper">
+              <video id="cameraFeed" autoplay playsinline muted></video>
+              <canvas id="cameraCanvas" style="display:none"></canvas>
+              <div class="video-overlay" id="videoOverlay">
+                <div class="overlay-icon">
+                  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.07A1 1 0 0121 8.876V15.124a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+                </div>
+                <p>Camera feed will appear here</p>
+                <span>Click "Start Test" below</span>
+              </div>
+              <div class="video-hud" id="videoHud" style="display:none">
+                <span class="hud-fps" id="hudFps">-- FPS</span>
+                <span class="hud-live">● LIVE</span>
+              </div>
+              <div class="mirror-badge" id="mirrorBadge" style="display:none">MIRRORED</div>
+            </div>
+
+            <!-- Controls -->
+            <div class="tester-controls">
+              <button class="btn btn-primary" id="startBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Start Test
+              </button>
+              <button class="btn btn-outline" id="stopBtn" disabled>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1"/></svg>
+                Stop
+              </button>
+              <button class="btn btn-outline" id="screenshotBtn" disabled>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M9 3h6"/></svg>
+                Screenshot
+              </button>
+              <button class="btn btn-outline" id="mirrorBtn" disabled>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M5 7l-2 2 2 2M19 7l2 2-2 2"/></svg>
+                Mirror
+              </button>
+            </div>
+
+            <!-- Camera Switch -->
+            <div class="device-row">
+              <label class="device-label">Camera Device</label>
+              <select id="cameraSelect" class="device-select" disabled>
+                <option value="">-- Select Camera --</option>
+              </select>
+            </div>
+
+            <!-- Screenshot preview -->
+            <div id="screenshotArea" class="screenshot-area" style="display:none">
+              <p class="ss-label">Screenshot captured <span id="ssTime"></span></p>
+              <img id="ssImg" alt="Screenshot" />
+              <a id="ssDownload" class="btn btn-outline btn-sm" download="camera-screenshot.png">Download</a>
+            </div>
+          </div>
+
+          <!-- Stats Panel -->
+          <div class="tester-panel stats-panel">
+            <div class="stats-header">
+              <span class="stats-title">Diagnostics</span>
+              <span class="status-badge" id="statusBadge">Idle</span>
+            </div>
+
+            <div class="stat-grid">
+              <div class="stat-card" id="sc-resolution">
+                <div class="sc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+                <div class="sc-info">
+                  <span class="sc-label">Resolution</span>
+                  <span class="sc-value" id="statResolution">—</span>
+                </div>
+              </div>
+              <div class="stat-card" id="sc-fps">
+                <div class="sc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="sc-info">
+                  <span class="sc-label">Frame Rate</span>
+                  <span class="sc-value" id="statFps">—</span>
+                </div>
+              </div>
+              <div class="stat-card" id="sc-aspect">
+                <div class="sc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7V5a2 2 0 012-2h2M17 3h2a2 2 0 012 2v2M21 17v2a2 2 0 01-2 2h-2M7 21H5a2 2 0 01-2-2v-2"/></svg></div>
+                <div class="sc-info">
+                  <span class="sc-label">Aspect Ratio</span>
+                  <span class="sc-value" id="statAspect">—</span>
+                </div>
+              </div>
+              <div class="stat-card" id="sc-facing">
+                <div class="sc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                <div class="sc-info">
+                  <span class="sc-label">Facing Mode</span>
+                  <span class="sc-value" id="statFacing">—</span>
+                </div>
+              </div>
+              <div class="stat-card" id="sc-device">
+                <div class="sc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="17" r="1"/></svg></div>
+                <div class="sc-info">
+                  <span class="sc-label">Device Name</span>
+                  <span class="sc-value sc-value-sm" id="statDevice">—</span>
+                </div>
+              </div>
+              <div class="stat-card" id="sc-cameras">
+                <div class="sc-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+                <div class="sc-info">
+                  <span class="sc-label">Available Cameras</span>
+                  <span class="sc-value" id="statCameras">—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Microphone Test -->
+            <div class="mic-section">
+              <div class="mic-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 013 3v7a3 3 0 11-6 0V5a3 3 0 013-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3M8 22h8"/></svg>
+                Microphone Level
+              </div>
+              <div class="mic-meter-wrap">
+                <div class="mic-meter" id="micMeter">
+                  <div class="mic-bar" id="micBar"></div>
+                </div>
+                <span class="mic-db" id="micDb">—</span>
+              </div>
+              <button class="btn btn-outline btn-sm" id="micTestBtn">Test Microphone</button>
+            </div>
+
+            <!-- Permission Status -->
+            <div class="perm-section" id="permSection">
+              <div class="perm-row">
+                <span class="perm-label">Camera Permission</span>
+                <span class="perm-status perm-unknown" id="permCamera">Unknown</span>
+              </div>
+              <div class="perm-row">
+                <span class="perm-label">Microphone Permission</span>
+                <span class="perm-status perm-unknown" id="permMic">Unknown</span>
+              </div>
+              <div class="perm-row">
+                <span class="perm-label">Browser Support</span>
+                <span class="perm-status" id="permBrowser">Checking…</span>
+              </div>
+            </div>
+
+            <!-- Error display -->
+            <div class="error-card" id="errorCard" style="display:none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span id="errorMsg">An error occurred.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-label">What We Test</div>
+        <h2 class="section-title">Everything Your Camera Needs Checked</h2>
+        <p class="section-sub">From basic connectivity to advanced specs — our camera test covers it all in one place.</p>
+        <div class="features-grid">
+          <div class="feat-card">
+            <div class="feat-icon feat-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            </div>
+            <h3>Resolution Check</h3>
+            <p>Detect your camera's exact output resolution — from 360p to 4K Ultra HD. Understand what your lens truly captures.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>FPS Counter</h3>
+            <p>Real-time frames-per-second monitoring. Know whether your camera delivers 24, 30, or 60 FPS for smooth video calls.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 013 3v7a3 3 0 11-6 0V5a3 3 0 013-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3M8 22h8"/></svg>
+            </div>
+            <h3>Microphone Test</h3>
+            <p>Live audio level meter to verify your microphone is picking up sound correctly alongside your camera.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="17" r="1"/><path d="M8 6h8M8 10h8"/></svg>
+            </div>
+            <h3>Device Detection</h3>
+            <p>Automatically identify all connected cameras, display their hardware names, and let you switch between devices.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+            <h3>Live Preview</h3>
+            <p>Instant live video stream from any camera — no plugins, no downloads. Runs entirely in your browser using WebRTC.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-rose">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M9 3h6"/></svg>
+            </div>
+            <h3>Screenshot Capture</h3>
+            <p>Grab a still frame from your live camera feed with one click and download it directly to your device.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-teal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Facing Mode</h3>
+            <p>Detect whether you're using a front-facing or rear-facing camera — essential for mobile device testing.</p>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon feat-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12H1M23 12h-2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="5"/></svg>
+            </div>
+            <h3>Permission Checker</h3>
+            <p>Instantly diagnose whether your browser has granted or blocked camera and microphone permissions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="hiw-section" id="how-it-works">
+      <div class="container">
+        <div class="section-label">Process</div>
+        <h2 class="section-title">How the Camera Test Works</h2>
+        <p class="section-sub">Three steps to complete camera diagnostics — no account, no install, no data shared.</p>
+        <div class="hiw-steps">
+          <div class="hiw-step">
+            <div class="step-num">01</div>
+            <div class="step-connector"></div>
+            <div class="step-content">
+              <h3>Grant Browser Permission</h3>
+              <p>When you click "Start Test," your browser asks for camera (and optionally microphone) access. Click Allow — this permission stays local on your device and is revocable anytime from browser settings.</p>
+            </div>
+          </div>
+          <div class="hiw-step">
+            <div class="step-num">02</div>
+            <div class="step-connector"></div>
+            <div class="step-content">
+              <h3>Live Stream Begins</h3>
+              <p>Using the WebRTC API, your browser opens a direct stream from your camera to the on-page video element. No data leaves your computer — the stream is processed entirely client-side in JavaScript.</p>
+            </div>
+          </div>
+          <div class="hiw-step">
+            <div class="step-num">03</div>
+            <div class="step-connector-none"></div>
+            <div class="step-content">
+              <h3>Read Diagnostics</h3>
+              <p>Resolution, FPS, device name, aspect ratio, and facing mode are all extracted from the MediaStream API and displayed in real time on your screen. Switch cameras, test your mic, or capture a screenshot.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEVICE SUPPORT ===== -->
+    <section class="devices-section" id="devices">
+      <div class="container">
+        <div class="section-label">Compatibility</div>
+        <h2 class="section-title">Works With Every Camera Type</h2>
+        <p class="section-sub">Whether you're on a laptop, phone, or desktop with a USB camera — our test handles it all.</p>
+        <div class="devices-grid">
+          <div class="device-card">
+            <div class="device-illustration laptop-ill">
+              <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="8" width="100" height="62" rx="4" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.5"/>
+                <rect x="18" y="16" width="84" height="48" rx="2" fill="var(--bg)"/>
+                <circle cx="60" cy="12" r="2" fill="var(--accent)"/>
+                <rect x="0" y="70" width="120" height="8" rx="2" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.5"/>
+                <rect x="40" y="70" width="40" height="4" rx="1" fill="var(--border)"/>
+              </svg>
+            </div>
+            <h3>Laptop Webcam</h3>
+            <p>Built-in webcams on MacBook, Windows laptops, and Chromebooks work instantly. Test before your next video call or interview.</p>
+            <ul class="device-features">
+              <li>HD & FHD detection</li>
+              <li>Auto permission handling</li>
+              <li>Works on all OS</li>
+            </ul>
+          </div>
+          <div class="device-card device-card-featured">
+            <div class="device-badge-feat">Most Used</div>
+            <div class="device-illustration phone-ill">
+              <svg viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="5" width="70" height="110" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.5"/>
+                <rect x="13" y="18" width="54" height="84" rx="3" fill="var(--bg)"/>
+                <circle cx="40" cy="12" r="3" fill="var(--accent)"/>
+                <circle cx="40" cy="109" r="5" fill="var(--border)"/>
+                <circle cx="55" cy="12" r="1.5" fill="var(--accent-2)"/>
+              </svg>
+            </div>
+            <h3>Mobile Phone Camera</h3>
+            <p>Test your smartphone's front and rear cameras directly in your mobile browser. Switch between cameras with one tap.</p>
+            <ul class="device-features">
+              <li>Front & rear camera switch</li>
+              <li>4K mobile camera support</li>
+              <li>iOS Safari & Android Chrome</li>
+            </ul>
+          </div>
+          <div class="device-card">
+            <div class="device-illustration usb-ill">
+              <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="35" r="26" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.5"/>
+                <circle cx="60" cy="35" r="16" fill="var(--bg)" stroke="var(--border)" stroke-width="1"/>
+                <circle cx="60" cy="35" r="8" fill="var(--surface-2)"/>
+                <rect x="50" y="60" width="20" height="12" rx="2" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.5"/>
+                <rect x="45" y="70" width="30" height="6" rx="2" fill="var(--border)"/>
+              </svg>
+            </div>
+            <h3>USB & External Cameras</h3>
+            <p>DSLR via capture card, USB webcam, IP camera — if your OS recognizes it, our camera test will find it and let you test it.</p>
+            <ul class="device-features">
+              <li>Multi-device enumeration</li>
+              <li>Device name display</li>
+              <li>Easy device switching</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TROUBLESHOOTING ===== -->
+    <section class="trouble-section" id="troubleshooting">
+      <div class="container">
+        <div class="section-label">Help Center</div>
+        <h2 class="section-title">Camera Not Working? Fix It Here</h2>
+        <p class="section-sub">The most common camera problems and their solutions — covering every major browser and operating system.</p>
+        <div class="trouble-grid">
+          <div class="trouble-card">
+            <div class="trouble-icon">🚫</div>
+            <h3>Permission Denied</h3>
+            <p>Your browser blocked camera access. Click the camera icon in the address bar → select "Allow" → refresh the page and try again.</p>
+          </div>
+          <div class="trouble-card">
+            <div class="trouble-icon">🔒</div>
+            <h3>Camera In Use</h3>
+            <p>Another app (Zoom, Teams, OBS) may be using the camera. Close all video apps, then restart your browser before running the test.</p>
+          </div>
+          <div class="trouble-card">
+            <div class="trouble-icon">⚙️</div>
+            <h3>Driver Issues</h3>
+            <p>Outdated or corrupt drivers on Windows can prevent detection. Open Device Manager → Cameras → Update driver → reboot.</p>
+          </div>
+          <div class="trouble-card">
+            <div class="trouble-icon">🌐</div>
+            <h3>HTTP vs HTTPS</h3>
+            <p>WebRTC camera access requires a secure HTTPS connection. If you're on HTTP, the browser will always block camera permissions.</p>
+          </div>
+          <div class="trouble-card">
+            <div class="trouble-icon">📱</div>
+            <h3>iOS Restrictions</h3>
+            <p>On iPhone/iPad, camera access in Safari works — but third-party browsers may be limited. Always use Safari on iOS for best results.</p>
+          </div>
+          <div class="trouble-card">
+            <div class="trouble-icon">🛡️</div>
+            <h3>Antivirus Blocking</h3>
+            <p>Some security software blocks camera access for all browsers. Temporarily disable your antivirus webcam shield and test again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BROWSER SUPPORT ===== -->
+    <section class="browser-section" id="browsers">
+      <div class="container">
+        <div class="section-label">Compatibility</div>
+        <h2 class="section-title">Supported Browsers</h2>
+        <p class="section-sub">CameraCheck works on all modern browsers that support the WebRTC and MediaDevices APIs.</p>
+        <div class="browser-row">
+          <div class="browser-item">
+            <div class="browser-logo chrome">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                <circle cx="12" cy="12" r="4" fill="var(--accent)"/>
+                <path d="M12 8h8.66a10 10 0 11-17.32 0z" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+                <path d="M4.34 16L8 12l3.13 5.42" fill="none" stroke="var(--accent-2)" stroke-width="2.5"/>
+                <path d="M19.66 16L12 12V4" fill="none" stroke="var(--text-muted)" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <span>Chrome</span>
+            <span class="compat-tag green">Full Support</span>
+          </div>
+          <div class="browser-item">
+            <div class="browser-logo firefox">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="var(--accent-2)" stroke-width="2.5"/>
+                <path d="M12 3c5 2 7 7 5 12" stroke="var(--accent)" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <span>Firefox</span>
+            <span class="compat-tag green">Full Support</span>
+          </div>
+          <div class="browser-item">
+            <div class="browser-logo safari">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="var(--accent)" stroke-width="2.5"/>
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="var(--accent-2)" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="3" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <span>Safari</span>
+            <span class="compat-tag yellow">Partial (iOS limit)</span>
+          </div>
+          <div class="browser-item">
+            <div class="browser-logo edge">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <path d="M3 12C3 7.03 7.03 3 12 3c3.5 0 6.5 1.8 8.2 4.5" stroke="var(--accent)" stroke-width="2.5" fill="none"/>
+                <path d="M21 12c0 4.97-4.03 9-9 9-2.8 0-5.3-1.3-7-3.3" stroke="var(--accent-2)" stroke-width="2.5" fill="none"/>
+                <path d="M7 14.5C7.5 17 10 19 12.5 19H20" stroke="var(--text-muted)" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <span>Edge</span>
+            <span class="compat-tag green">Full Support</span>
+          </div>
+          <div class="browser-item">
+            <div class="browser-logo opera">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="var(--accent)" stroke-width="2.5"/>
+                <ellipse cx="12" cy="12" rx="4" ry="9" stroke="var(--accent-2)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <span>Opera</span>
+            <span class="compat-tag green">Full Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== USE CASES ===== -->
+    <section class="usecases-section" id="use-cases">
+      <div class="container">
+        <div class="section-label">Use Cases</div>
+        <h2 class="section-title">Who Uses Camera Test?</h2>
+        <p class="section-sub">Millions of people rely on camera tests for different reasons — here are the most common.</p>
+        <div class="usecase-grid">
+          <div class="usecase-item">
+            <div class="uc-num">01</div>
+            <div class="uc-body">
+              <h3>Job Interview Prep</h3>
+              <p>Before a video job interview on Zoom, Google Meet, or Teams, test your webcam to confirm it's working, framed correctly, and capturing in HD. First impressions matter — don't leave it to chance.</p>
+            </div>
+          </div>
+          <div class="usecase-item">
+            <div class="uc-num">02</div>
+            <div class="uc-body">
+              <h3>Online Gamers & Streamers</h3>
+              <p>Content creators and streamers need to verify camera resolution and FPS before going live. Our FPS counter confirms your camera delivers the smooth 60 fps your audience expects.</p>
+            </div>
+          </div>
+          <div class="usecase-item">
+            <div class="uc-num">03</div>
+            <div class="uc-body">
+              <h3>Remote Workers</h3>
+              <p>Working from home means video calls all day. A quick camera check each morning ensures no technical surprises when you join that critical client meeting.</p>
+            </div>
+          </div>
+          <div class="usecase-item">
+            <div class="uc-num">04</div>
+            <div class="uc-body">
+              <h3>Teachers & Students</h3>
+              <p>Before online classes start, educators and students test their cameras and microphones to ensure uninterrupted learning sessions without technical disruptions.</p>
+            </div>
+          </div>
+          <div class="usecase-item">
+            <div class="uc-num">05</div>
+            <div class="uc-body">
+              <h3>Tech Support Diagnosis</h3>
+              <p>IT professionals use our camera test as a quick diagnostic tool to determine whether a camera issue is hardware, driver, or software related — without installing extra software.</p>
+            </div>
+          </div>
+          <div class="usecase-item">
+            <div class="uc-num">06</div>
+            <div class="uc-body">
+              <h3>Buying a Used Device</h3>
+              <p>When buying a second-hand laptop or phone, a 30-second camera test confirms the front and rear cameras work correctly before you complete the purchase.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-sub">Quick answers to the most common camera test questions.</p>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Is this camera test really free?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>Yes, completely free. CameraCheck has no subscription, no registration, and no hidden charges. The tool is browser-based and will always remain free to use.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Does CameraCheck store my video or photos?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>No. Your camera stream is processed entirely within your browser using JavaScript. Nothing is uploaded to any server. Screenshots you take are saved only to your local device.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Why does the camera test need permission?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>Modern browsers require explicit user permission before any website can access your camera or microphone. This is a browser-level security feature. Granting permission allows this tab only — it's not permanent and can be revoked anytime.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How do I test my phone's camera?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>Open cameracheck.github.io in your mobile browser (Chrome on Android or Safari on iOS), tap "Start Camera Test," and grant permission. Use the camera selector to switch between your front and rear cameras.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Why is my webcam showing black or not loading?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>This usually means another app is using the camera, a driver issue exists, or the camera hardware has a fault. Check our Troubleshooting section above for step-by-step fixes. Try closing Zoom, Teams, or any other app with camera access first.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can I test multiple cameras at once?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>You can switch between multiple cameras using the device selector dropdown. The tool detects all cameras connected to your device. Testing multiple streams simultaneously is not supported by browser security policies.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              What does the FPS reading mean?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>FPS (frames per second) indicates how many images your camera captures each second. 30 FPS is standard for video calls; 60 FPS is preferred for streaming. Lower values like 15 FPS may indicate a performance bottleneck.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Does this work without internet?
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-a">
+              <p>Once the page is loaded, the camera test itself runs entirely offline — it uses only your device's hardware and browser APIs. An internet connection is only needed to initially load the page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRIVACY SECTION ===== -->
+    <section class="privacy-section" id="privacy">
+      <div class="container">
+        <div class="privacy-inner">
+          <div class="privacy-text">
+            <div class="section-label">Privacy</div>
+            <h2 class="section-title">Your Camera. Your Data. Your Device.</h2>
+            <p>We take privacy seriously. CameraCheck is built on the principle that a diagnostic tool should never be a surveillance tool.</p>
+            <ul class="privacy-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                No video or audio ever leaves your device
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                No cookies, no tracking, no analytics on camera data
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                No account or sign-up required — ever
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                All processing happens 100% client-side in JavaScript
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Camera permission is scoped to this browser tab only
+              </li>
+            </ul>
+          </div>
+          <div class="privacy-visual">
+            <div class="shield-wrap">
+              <svg class="shield-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60 8L12 28v44c0 28 20 52 48 60 28-8 48-32 48-60V28L60 8z" fill="var(--surface-2)" stroke="var(--accent)" stroke-width="2"/>
+                <path d="M60 22L24 38v32c0 20 14.5 38 36 44 21.5-6 36-24 36-44V38L60 22z" fill="var(--surface-1)" stroke="var(--border)" stroke-width="1.5"/>
+                <polyline points="42 68 55 81 80 56" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <h2>Ready to Test Your Camera?</h2>
+          <p>Takes less than 10 seconds. No download. No sign-up. Works on any device.</p>
+          <a href="#camera-tester" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><path d="M20.188 10.934c.2.4.312.845.312 1.316C20.5 15.47 16.642 18 12 18s-8.5-2.53-8.5-5.75c0-.47.112-.915.312-1.316"/></svg>
+            Start Camera Test Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injected by footer.js -->
+  <div id="footer-root"></div>
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
