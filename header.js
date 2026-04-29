@@ -12,7 +12,7 @@
               <path d="M15 10l4.553-2.07A1 1 0 0121 8.876V15.124a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
             </svg>
           </div>
-          Camera<span>Check</span>
+          Camera<span>Test</span>
         </a>
 
         <nav class="nav" aria-label="Primary navigation">
