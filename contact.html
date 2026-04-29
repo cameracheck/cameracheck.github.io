@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | CameraCheck</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 0; }
+    .contact-form { background: var(--surface-2); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; margin-bottom: 8px; font-family: 'Syne'; font-size: 0.9rem; color: var(--text-muted); }
+    .form-input { width: 100%; background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; color: var(--text); font-family: 'DM Sans'; }
+    .form-input:focus { border-color: var(--accent); outline: none; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div id="header-root"></div>
+
+  <main>
+    <section class="hero" style="min-height: auto; padding: 100px 0 40px;">
+      <div class="container">
+        <div class="section-label">Support</div>
+        <h1 class="hero-title">Get In <span class="line-2">Touch</span></h1>
+        <p class="hero-desc">Have a question about our diagnostic tools or need help troubleshooting your camera? I'm here to help[cite: 2].</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="feat-card">
+            <div class="feat-icon feat-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Direct Email</h3>
+            <p>For business inquiries, SEO consulting, or technical support, reach out directly to:</p>
+            <a href="mailto:nolushac@gmail.com" style="font-weight: 700; font-size: 1.1rem;">nolushac@gmail.com</a>
+          </div>
+          
+          <div class="feat-card" style="margin-top: 20px;">
+            <div class="feat-icon feat-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            </div>
+            <h3>Expertise</h3>
+            <p>Developed by Waqas Bukhari — Web Developer & SEO Expert. Dedicated to building fast, accessible, and privacy-conscious web applications[cite: 1, 2].</p>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" class="form-input" placeholder="Waqas Bukhari">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" class="form-input" placeholder="email@example.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-input" rows="5" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-root"></div>
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+</body>
+</html>
