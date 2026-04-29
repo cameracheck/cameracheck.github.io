@@ -24,33 +24,33 @@
           <div class="footer-col">
             <h4>Tools</h4>
             <ul>
-              <li><a href="#camera-tester">Webcam Test</a></li>
-              <li><a href="#camera-tester">Phone Camera Test</a></li>
-              <li><a href="#camera-tester">Microphone Test</a></li>
-              <li><a href="#camera-tester">Camera FPS Test</a></li>
-              <li><a href="#camera-tester">Resolution Checker</a></li>
+              <li><a href="/#camera-tester">Webcam Test</a></li>
+              <li><a href="/#camera-tester">Phone Camera Test</a></li>
+              <li><a href="/#camera-tester">Microphone Test</a></li>
+              <li><a href="/#camera-tester">Camera FPS Test</a></li>
+              <li><a href="/#camera-tester">Resolution Checker</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
             <h4>Help</h4>
             <ul>
-              <li><a href="#troubleshooting">Camera Not Working</a></li>
-              <li><a href="#troubleshooting">Permission Denied</a></li>
-              <li><a href="#troubleshooting">Black Screen Fix</a></li>
-              <li><a href="#troubleshooting">Driver Issues</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="/#troubleshooting">Camera Not Working</a></li>
+              <li><a href="/#troubleshooting">Permission Denied</a></li>
+              <li><a href="/#troubleshooting">Black Screen Fix</a></li>
+              <li><a href="/#troubleshooting">Driver Issues</a></li>
+              <li><a href="/#faq">FAQ</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h4>Info</h4>
+            <h4>Pages</h4>
             <ul>
-              <li><a href="#how-it-works">How It Works</a></li>
-              <li><a href="#devices">Supported Devices</a></li>
-              <li><a href="#browsers">Browser Support</a></li>
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#use-cases">Use Cases</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Use</a></li>
             </ul>
           </div>
         </div>
@@ -58,9 +58,8 @@
         <div class="footer-bottom">
           <p>© ${year} CameraCheck · <a href="https://cameracheck.github.io/" style="color:var(--text-dim)">cameracheck.github.io</a> · All camera tests run 100% in your browser</p>
           <div class="footer-bottom-links">
-            <a href="#privacy">Privacy</a>
-            <a href="#faq">FAQ</a>
-            <a href="#camera-tester">Test Camera</a>
+            <a href="/privacy">Privacy</a>            
+            <a href="/#camera-tester">Test Camera</a>
           </div>
         </div>
       </div>
